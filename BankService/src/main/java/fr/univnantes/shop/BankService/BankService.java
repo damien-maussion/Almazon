@@ -8,7 +8,7 @@ public class BankService {
 		return 1.09;
 	}
 	
-	public boolean debit(String cn, String cfn, String n, int em, int ey, String k, int amount){
+	public boolean debit(String cn, String cfn, String n, int em, int ey, String k, double amount){
 		return debit(new ClientBankInfo(cn, cfn, n, em, ey, k), amount);
 	}
 	
@@ -22,7 +22,7 @@ public class BankService {
 		return clients.contains(cbi);
 	}
 
-	private boolean debit(ClientBankInfo cbi, int amount){
+	private boolean debit(ClientBankInfo cbi, double amount){
 		return isValidClient(cbi);
 	}
 	

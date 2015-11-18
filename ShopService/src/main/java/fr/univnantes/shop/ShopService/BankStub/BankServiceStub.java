@@ -118,7 +118,7 @@
      */
     public BankServiceStub(org.apache.axis2.context.ConfigurationContext configurationContext) throws org.apache.axis2.AxisFault {
         
-                    this(configurationContext,"http://192.168.3.179:9763/services/BankService.BankServiceHttpSoap12Endpoint/" );
+                    this(configurationContext,"http://10.189.128.6:9763/services/BankService.BankServiceHttpSoap12Endpoint/" );
                 
     }
 
@@ -127,7 +127,7 @@
      */
     public BankServiceStub() throws org.apache.axis2.AxisFault {
         
-                    this("http://192.168.3.179:9763/services/BankService.BankServiceHttpSoap12Endpoint/" );
+                    this("http://10.189.128.6:9763/services/BankService.BankServiceHttpSoap12Endpoint/" );
                 
     }
 
@@ -706,7 +706,7 @@
         }
         return false;
     }
-     //http://192.168.3.179:9763/services/BankService.BankServiceHttpSoap12Endpoint/
+     //http://10.189.128.6:9763/services/BankService.BankServiceHttpSoap12Endpoint/
         public static class GetExchangeRate
         implements org.apache.axis2.databinding.ADBBean{
         
@@ -1964,7 +1964,7 @@
                         */
 
                         
-                                    protected int localAmount ;
+                                    protected double localAmount ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
@@ -1980,9 +1980,9 @@
 
                            /**
                            * Auto generated getter method
-                           * @return int
+                           * @return double
                            */
-                           public  int getAmount(){
+                           public  double getAmount(){
                                return localAmount;
                            }
 
@@ -1992,11 +1992,11 @@
                                * Auto generated setter method
                                * @param param Amount
                                */
-                               public void setAmount(int param){
+                               public void setAmount(double param){
                             
                                        // setting primitive attribute tracker to true
                                        localAmountTracker =
-                                       param != java.lang.Integer.MIN_VALUE;
+                                       !java.lang.Double.isNaN(param);
                                    
                                             this.localAmount=param;
                                     
@@ -2164,7 +2164,7 @@
                                     namespace = "http://BankService.shop.univnantes.fr";
                                     writeStartElement(null, namespace, "amount", xmlWriter);
                              
-                                               if (localAmount==java.lang.Integer.MIN_VALUE) {
+                                               if (java.lang.Double.isNaN(localAmount)) {
                                            
                                                          throw new org.apache.axis2.databinding.ADBException("amount cannot be null!!");
                                                       
@@ -2649,7 +2649,7 @@
                                     java.lang.String content = reader.getElementText();
                                     
                                               object.setAmount(
-                                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(content));
+                                                    org.apache.axis2.databinding.utils.ConverterUtil.convertToDouble(content));
                                               
                                         reader.next();
                                     
@@ -2657,7 +2657,7 @@
                                 
                                     else {
                                         
-                                               object.setAmount(java.lang.Integer.MIN_VALUE);
+                                               object.setAmount(java.lang.Double.NaN);
                                            
                                     }
                                   
