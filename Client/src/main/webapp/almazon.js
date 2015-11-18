@@ -1,12 +1,11 @@
-function test(){
-	alert("Hello World!");
+function test () {
 	$.soap({
     	url: 'http://localhost:9763/services/ShopService/',
     	namespaceURL:'http://ShopService.shop.univnantes.fr'
 	});
 
 	$.soap({
-		method: 'getExchangeRate',
+		method: 'getItemList',
 		data: {},
 		soap12: true,
 		success: function (soapResponse) {
@@ -26,7 +25,7 @@ function test(){
 
 var cleanProducts = function(o)
 {
-	return o['#document']['ns:getExchangeRateResponse']['ns:return'];
+	return o['#document']['ns:getItemListResponse']['ns:return'];
 };
 
 var updateProducts = function(products)

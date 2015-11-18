@@ -8,22 +8,22 @@ public class BankService {
 		return 1.09;
 	}
 	
-	public boolean debit(String cn, String cfn, String n, int em, int ey, String k, double amount){
-		return debit(new ClientBankInfo(cn, cfn, n, em, ey, k), amount);
+	public boolean debit(String clientFirstName, String clientName, String numero, int expirationMonth, int expirationYear, String key, double amount){
+		return debit(new ClientBankInfo(clientFirstName, clientName, numero, expirationMonth, expirationYear, key), amount);
 	}
 	
-	private boolean isValidClient(ClientBankInfo cbi){
+	private boolean isValidClient(ClientBankInfo clientBankInfo){
 		
 		ArrayList<ClientBankInfo> clients = new ArrayList<ClientBankInfo>();
 		clients.add(new ClientBankInfo("Jean", "Neymar", "1234567891011", 1, 2017, "304"));
 		clients.add(new ClientBankInfo("Jean", "Bombeur", "1234567891011", 1, 2017, "304"));
 		clients.add(new ClientBankInfo("Yvan", "Draissamere", "1234567891011", 1, 2017, "304"));
 		
-		return clients.contains(cbi);
+		return clients.contains(clientBankInfo);
 	}
 
-	private boolean debit(ClientBankInfo cbi, double amount){
-		return isValidClient(cbi);
+	private boolean debit(ClientBankInfo clientBankInfo, double amount){
+		return isValidClient(clientBankInfo);
 	}
 	
 	

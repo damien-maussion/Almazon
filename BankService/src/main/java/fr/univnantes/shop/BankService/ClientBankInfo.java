@@ -8,13 +8,13 @@ public class ClientBankInfo {
 	private int expirationYear;
 	private String key;
 	
-	public ClientBankInfo(String cfn, String cn, String n, int em, int ey, String k){
-		clientName=cn;
-		clientFirstName=cfn;
-		numero=n;
-		expirationMonth=em;
-		expirationYear=ey;
-		key=k;
+	public ClientBankInfo(String clientFirstName, String clientName, String numero, int expirationMonth, int expirationYear, String key){
+		this.clientName=clientName;
+		this.clientFirstName=clientFirstName;
+		this.numero=numero;
+		this.expirationMonth=expirationMonth;
+		this.expirationYear=expirationYear;
+		this.key=key;
 	}
 	
 	public String getClientName() {

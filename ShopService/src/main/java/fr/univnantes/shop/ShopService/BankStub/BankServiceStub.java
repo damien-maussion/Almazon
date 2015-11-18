@@ -1702,20 +1702,20 @@
             
 
                         /**
-                        * field for Cn
+                        * field for ClientFirstName
                         */
 
                         
-                                    protected java.lang.String localCn ;
+                                    protected java.lang.String localClientFirstName ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
-                           protected boolean localCnTracker = false ;
+                           protected boolean localClientFirstNameTracker = false ;
 
-                           public boolean isCnSpecified(){
-                               return localCnTracker;
+                           public boolean isClientFirstNameSpecified(){
+                               return localClientFirstNameTracker;
                            }
 
                            
@@ -1724,40 +1724,40 @@
                            * Auto generated getter method
                            * @return java.lang.String
                            */
-                           public  java.lang.String getCn(){
-                               return localCn;
+                           public  java.lang.String getClientFirstName(){
+                               return localClientFirstName;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param Cn
+                               * @param param ClientFirstName
                                */
-                               public void setCn(java.lang.String param){
-                            localCnTracker = true;
+                               public void setClientFirstName(java.lang.String param){
+                            localClientFirstNameTracker = true;
                                    
-                                            this.localCn=param;
+                                            this.localClientFirstName=param;
                                     
 
                                }
                             
 
                         /**
-                        * field for Cfn
+                        * field for ClientName
                         */
 
                         
-                                    protected java.lang.String localCfn ;
+                                    protected java.lang.String localClientName ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
-                           protected boolean localCfnTracker = false ;
+                           protected boolean localClientNameTracker = false ;
 
-                           public boolean isCfnSpecified(){
-                               return localCfnTracker;
+                           public boolean isClientNameSpecified(){
+                               return localClientNameTracker;
                            }
 
                            
@@ -1766,40 +1766,40 @@
                            * Auto generated getter method
                            * @return java.lang.String
                            */
-                           public  java.lang.String getCfn(){
-                               return localCfn;
+                           public  java.lang.String getClientName(){
+                               return localClientName;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param Cfn
+                               * @param param ClientName
                                */
-                               public void setCfn(java.lang.String param){
-                            localCfnTracker = true;
+                               public void setClientName(java.lang.String param){
+                            localClientNameTracker = true;
                                    
-                                            this.localCfn=param;
+                                            this.localClientName=param;
                                     
 
                                }
                             
 
                         /**
-                        * field for N
+                        * field for Numero
                         */
 
                         
-                                    protected java.lang.String localN ;
+                                    protected java.lang.String localNumero ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
-                           protected boolean localNTracker = false ;
+                           protected boolean localNumeroTracker = false ;
 
-                           public boolean isNSpecified(){
-                               return localNTracker;
+                           public boolean isNumeroSpecified(){
+                               return localNumeroTracker;
                            }
 
                            
@@ -1808,40 +1808,40 @@
                            * Auto generated getter method
                            * @return java.lang.String
                            */
-                           public  java.lang.String getN(){
-                               return localN;
+                           public  java.lang.String getNumero(){
+                               return localNumero;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param N
+                               * @param param Numero
                                */
-                               public void setN(java.lang.String param){
-                            localNTracker = true;
+                               public void setNumero(java.lang.String param){
+                            localNumeroTracker = true;
                                    
-                                            this.localN=param;
+                                            this.localNumero=param;
                                     
 
                                }
                             
 
                         /**
-                        * field for Em
+                        * field for ExpirationMonth
                         */
 
                         
-                                    protected int localEm ;
+                                    protected int localExpirationMonth ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
-                           protected boolean localEmTracker = false ;
+                           protected boolean localExpirationMonthTracker = false ;
 
-                           public boolean isEmSpecified(){
-                               return localEmTracker;
+                           public boolean isExpirationMonthSpecified(){
+                               return localExpirationMonthTracker;
                            }
 
                            
@@ -1850,43 +1850,43 @@
                            * Auto generated getter method
                            * @return int
                            */
-                           public  int getEm(){
-                               return localEm;
+                           public  int getExpirationMonth(){
+                               return localExpirationMonth;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param Em
+                               * @param param ExpirationMonth
                                */
-                               public void setEm(int param){
+                               public void setExpirationMonth(int param){
                             
                                        // setting primitive attribute tracker to true
-                                       localEmTracker =
+                                       localExpirationMonthTracker =
                                        param != java.lang.Integer.MIN_VALUE;
                                    
-                                            this.localEm=param;
+                                            this.localExpirationMonth=param;
                                     
 
                                }
                             
 
                         /**
-                        * field for Ey
+                        * field for ExpirationYear
                         */
 
                         
-                                    protected int localEy ;
+                                    protected int localExpirationYear ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
-                           protected boolean localEyTracker = false ;
+                           protected boolean localExpirationYearTracker = false ;
 
-                           public boolean isEySpecified(){
-                               return localEyTracker;
+                           public boolean isExpirationYearSpecified(){
+                               return localExpirationYearTracker;
                            }
 
                            
@@ -1895,43 +1895,43 @@
                            * Auto generated getter method
                            * @return int
                            */
-                           public  int getEy(){
-                               return localEy;
+                           public  int getExpirationYear(){
+                               return localExpirationYear;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param Ey
+                               * @param param ExpirationYear
                                */
-                               public void setEy(int param){
+                               public void setExpirationYear(int param){
                             
                                        // setting primitive attribute tracker to true
-                                       localEyTracker =
+                                       localExpirationYearTracker =
                                        param != java.lang.Integer.MIN_VALUE;
                                    
-                                            this.localEy=param;
+                                            this.localExpirationYear=param;
                                     
 
                                }
                             
 
                         /**
-                        * field for K
+                        * field for Key
                         */
 
                         
-                                    protected java.lang.String localK ;
+                                    protected java.lang.String localKey ;
                                 
                            /*  This tracker boolean wil be used to detect whether the user called the set method
                           *   for this attribute. It will be used to determine whether to include this field
                            *   in the serialized XML
                            */
-                           protected boolean localKTracker = false ;
+                           protected boolean localKeyTracker = false ;
 
-                           public boolean isKSpecified(){
-                               return localKTracker;
+                           public boolean isKeySpecified(){
+                               return localKeyTracker;
                            }
 
                            
@@ -1940,20 +1940,20 @@
                            * Auto generated getter method
                            * @return java.lang.String
                            */
-                           public  java.lang.String getK(){
-                               return localK;
+                           public  java.lang.String getKey(){
+                               return localKey;
                            }
 
                            
                         
                             /**
                                * Auto generated setter method
-                               * @param param K
+                               * @param param Key
                                */
-                               public void setK(java.lang.String param){
-                            localKTracker = true;
+                               public void setKey(java.lang.String param){
+                            localKeyTracker = true;
                                    
-                                            this.localK=param;
+                                            this.localKey=param;
                                     
 
                                }
@@ -2062,12 +2062,12 @@
 
                
                    }
-                if (localCnTracker){
+                if (localClientFirstNameTracker){
                                     namespace = "http://BankService.shop.univnantes.fr";
-                                    writeStartElement(null, namespace, "cn", xmlWriter);
+                                    writeStartElement(null, namespace, "clientFirstName", xmlWriter);
                              
 
-                                          if (localCn==null){
+                                          if (localClientFirstName==null){
                                               // write the nil attribute
                                               
                                                      writeAttribute("xsi","http://www.w3.org/2001/XMLSchema-instance","nil","1",xmlWriter);
@@ -2075,17 +2075,17 @@
                                           }else{
 
                                         
-                                                   xmlWriter.writeCharacters(localCn);
+                                                   xmlWriter.writeCharacters(localClientFirstName);
                                             
                                           }
                                     
                                    xmlWriter.writeEndElement();
-                             } if (localCfnTracker){
+                             } if (localClientNameTracker){
                                     namespace = "http://BankService.shop.univnantes.fr";
-                                    writeStartElement(null, namespace, "cfn", xmlWriter);
+                                    writeStartElement(null, namespace, "clientName", xmlWriter);
                              
 
-                                          if (localCfn==null){
+                                          if (localClientName==null){
                                               // write the nil attribute
                                               
                                                      writeAttribute("xsi","http://www.w3.org/2001/XMLSchema-instance","nil","1",xmlWriter);
@@ -2093,17 +2093,17 @@
                                           }else{
 
                                         
-                                                   xmlWriter.writeCharacters(localCfn);
+                                                   xmlWriter.writeCharacters(localClientName);
                                             
                                           }
                                     
                                    xmlWriter.writeEndElement();
-                             } if (localNTracker){
+                             } if (localNumeroTracker){
                                     namespace = "http://BankService.shop.univnantes.fr";
-                                    writeStartElement(null, namespace, "n", xmlWriter);
+                                    writeStartElement(null, namespace, "numero", xmlWriter);
                              
 
-                                          if (localN==null){
+                                          if (localNumero==null){
                                               // write the nil attribute
                                               
                                                      writeAttribute("xsi","http://www.w3.org/2001/XMLSchema-instance","nil","1",xmlWriter);
@@ -2111,43 +2111,43 @@
                                           }else{
 
                                         
-                                                   xmlWriter.writeCharacters(localN);
+                                                   xmlWriter.writeCharacters(localNumero);
                                             
                                           }
                                     
                                    xmlWriter.writeEndElement();
-                             } if (localEmTracker){
+                             } if (localExpirationMonthTracker){
                                     namespace = "http://BankService.shop.univnantes.fr";
-                                    writeStartElement(null, namespace, "em", xmlWriter);
+                                    writeStartElement(null, namespace, "expirationMonth", xmlWriter);
                              
-                                               if (localEm==java.lang.Integer.MIN_VALUE) {
+                                               if (localExpirationMonth==java.lang.Integer.MIN_VALUE) {
                                            
-                                                         throw new org.apache.axis2.databinding.ADBException("em cannot be null!!");
+                                                         throw new org.apache.axis2.databinding.ADBException("expirationMonth cannot be null!!");
                                                       
                                                } else {
-                                                    xmlWriter.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localEm));
+                                                    xmlWriter.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localExpirationMonth));
                                                }
                                     
                                    xmlWriter.writeEndElement();
-                             } if (localEyTracker){
+                             } if (localExpirationYearTracker){
                                     namespace = "http://BankService.shop.univnantes.fr";
-                                    writeStartElement(null, namespace, "ey", xmlWriter);
+                                    writeStartElement(null, namespace, "expirationYear", xmlWriter);
                              
-                                               if (localEy==java.lang.Integer.MIN_VALUE) {
+                                               if (localExpirationYear==java.lang.Integer.MIN_VALUE) {
                                            
-                                                         throw new org.apache.axis2.databinding.ADBException("ey cannot be null!!");
+                                                         throw new org.apache.axis2.databinding.ADBException("expirationYear cannot be null!!");
                                                       
                                                } else {
-                                                    xmlWriter.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localEy));
+                                                    xmlWriter.writeCharacters(org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localExpirationYear));
                                                }
                                     
                                    xmlWriter.writeEndElement();
-                             } if (localKTracker){
+                             } if (localKeyTracker){
                                     namespace = "http://BankService.shop.univnantes.fr";
-                                    writeStartElement(null, namespace, "k", xmlWriter);
+                                    writeStartElement(null, namespace, "key", xmlWriter);
                              
 
-                                          if (localK==null){
+                                          if (localKey==null){
                                               // write the nil attribute
                                               
                                                      writeAttribute("xsi","http://www.w3.org/2001/XMLSchema-instance","nil","1",xmlWriter);
@@ -2155,7 +2155,7 @@
                                           }else{
 
                                         
-                                                   xmlWriter.writeCharacters(localK);
+                                                   xmlWriter.writeCharacters(localKey);
                                             
                                           }
                                     
@@ -2353,42 +2353,42 @@
                  java.util.ArrayList elementList = new java.util.ArrayList();
                  java.util.ArrayList attribList = new java.util.ArrayList();
 
-                 if (localCnTracker){
+                 if (localClientFirstNameTracker){
                                       elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
-                                                                      "cn"));
+                                                                      "clientFirstName"));
                                  
-                                         elementList.add(localCn==null?null:
-                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localCn));
-                                    } if (localCfnTracker){
+                                         elementList.add(localClientFirstName==null?null:
+                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localClientFirstName));
+                                    } if (localClientNameTracker){
                                       elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
-                                                                      "cfn"));
+                                                                      "clientName"));
                                  
-                                         elementList.add(localCfn==null?null:
-                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localCfn));
-                                    } if (localNTracker){
+                                         elementList.add(localClientName==null?null:
+                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localClientName));
+                                    } if (localNumeroTracker){
                                       elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
-                                                                      "n"));
+                                                                      "numero"));
                                  
-                                         elementList.add(localN==null?null:
-                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localN));
-                                    } if (localEmTracker){
+                                         elementList.add(localNumero==null?null:
+                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localNumero));
+                                    } if (localExpirationMonthTracker){
                                       elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
-                                                                      "em"));
-                                 
-                                elementList.add(
-                                   org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localEm));
-                            } if (localEyTracker){
-                                      elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
-                                                                      "ey"));
+                                                                      "expirationMonth"));
                                  
                                 elementList.add(
-                                   org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localEy));
-                            } if (localKTracker){
+                                   org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localExpirationMonth));
+                            } if (localExpirationYearTracker){
                                       elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
-                                                                      "k"));
+                                                                      "expirationYear"));
                                  
-                                         elementList.add(localK==null?null:
-                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localK));
+                                elementList.add(
+                                   org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localExpirationYear));
+                            } if (localKeyTracker){
+                                      elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
+                                                                      "key"));
+                                 
+                                         elementList.add(localKey==null?null:
+                                         org.apache.axis2.databinding.utils.ConverterUtil.convertToString(localKey));
                                     } if (localAmountTracker){
                                       elementList.add(new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr",
                                                                       "amount"));
@@ -2474,7 +2474,7 @@
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","cn").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","clientFirstName").equals(reader.getName())){
                                 
                                        nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance","nil");
                                        if (!"true".equals(nillableValue) && !"1".equals(nillableValue)){
@@ -2482,7 +2482,7 @@
 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setCn(
+                                              object.setClientFirstName(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
                                             
                                        } else {
@@ -2502,7 +2502,7 @@
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","cfn").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","clientName").equals(reader.getName())){
                                 
                                        nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance","nil");
                                        if (!"true".equals(nillableValue) && !"1".equals(nillableValue)){
@@ -2510,7 +2510,7 @@
 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setCfn(
+                                              object.setClientName(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
                                             
                                        } else {
@@ -2530,7 +2530,7 @@
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","n").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","numero").equals(reader.getName())){
                                 
                                        nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance","nil");
                                        if (!"true".equals(nillableValue) && !"1".equals(nillableValue)){
@@ -2538,7 +2538,7 @@
 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setN(
+                                              object.setNumero(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
                                             
                                        } else {
@@ -2558,17 +2558,17 @@
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","em").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","expirationMonth").equals(reader.getName())){
                                 
                                     nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance","nil");
                                     if ("true".equals(nillableValue) || "1".equals(nillableValue)){
-                                        throw new org.apache.axis2.databinding.ADBException("The element: "+"em" +"  cannot be null");
+                                        throw new org.apache.axis2.databinding.ADBException("The element: "+"expirationMonth" +"  cannot be null");
                                     }
                                     
 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setEm(
+                                              object.setExpirationMonth(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(content));
                                               
                                         reader.next();
@@ -2577,24 +2577,24 @@
                                 
                                     else {
                                         
-                                               object.setEm(java.lang.Integer.MIN_VALUE);
+                                               object.setExpirationMonth(java.lang.Integer.MIN_VALUE);
                                            
                                     }
                                 
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","ey").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","expirationYear").equals(reader.getName())){
                                 
                                     nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance","nil");
                                     if ("true".equals(nillableValue) || "1".equals(nillableValue)){
-                                        throw new org.apache.axis2.databinding.ADBException("The element: "+"ey" +"  cannot be null");
+                                        throw new org.apache.axis2.databinding.ADBException("The element: "+"expirationYear" +"  cannot be null");
                                     }
                                     
 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setEy(
+                                              object.setExpirationYear(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToInt(content));
                                               
                                         reader.next();
@@ -2603,14 +2603,14 @@
                                 
                                     else {
                                         
-                                               object.setEy(java.lang.Integer.MIN_VALUE);
+                                               object.setExpirationYear(java.lang.Integer.MIN_VALUE);
                                            
                                     }
                                 
                                     
                                     while (!reader.isStartElement() && !reader.isEndElement()) reader.next();
                                 
-                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","k").equals(reader.getName())){
+                                    if (reader.isStartElement() && new javax.xml.namespace.QName("http://BankService.shop.univnantes.fr","key").equals(reader.getName())){
                                 
                                        nillableValue = reader.getAttributeValue("http://www.w3.org/2001/XMLSchema-instance","nil");
                                        if (!"true".equals(nillableValue) && !"1".equals(nillableValue)){
@@ -2618,7 +2618,7 @@
 
                                     java.lang.String content = reader.getElementText();
                                     
-                                              object.setK(
+                                              object.setKey(
                                                     org.apache.axis2.databinding.utils.ConverterUtil.convertToString(content));
                                             
                                        } else {

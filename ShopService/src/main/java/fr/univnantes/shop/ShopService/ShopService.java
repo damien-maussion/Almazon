@@ -1,7 +1,5 @@
 package fr.univnantes.shop.ShopService;
 
-import java.awt.List;
-import java.lang.reflect.Array;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,9 +27,21 @@ public class ShopService {
 		sss = new SupplierServiceStub("http://localhost:9763/services/SupplierService/");
 	}
 	
-	public Collection<Product> getItemList() throws RemoteException{
+	public Collection<Product> getItemList(String devise) throws RemoteException{
 		GetItemList g = new GetItemList();
-		return new ArrayList<Product>(Arrays.asList(sss.getItemList(g).get_return()));
+		ArrayList<Product> prod = new ArrayList<Product>(Arrays.asList(sss.getItemList(g).get_return()));
+		
+		GetExchangeRate ger = new GetExchangeRate();
+		ger.setDevise("dollar");
+		ger.setDevise2(devise);
+		
+		double exRate = bss.getExchangeRate(ger).get_return();
+		
+		for (Product p : prod){
+			p.setPrice(p.getPrice()*exRate);
+		}
+		
+		return prod;
 	}
 	
 	public int getStock(String itemId) throws RemoteException{
@@ -44,7 +54,7 @@ public class ShopService {
 	public double getPrice(String itemId, String devise) throws RemoteException{
 		GetExchangeRate ger = new GetExchangeRate();
 		ger.setDevise("dollar");
-		ger.setDevise2("euro");
+		ger.setDevise2(devise);
 		
 		double exRate = bss.getExchangeRate(ger).get_return();
 		
@@ -57,7 +67,7 @@ public class ShopService {
 	}
 	
 	
-	public boolean buy(String itemId, int qt, String devise, String cfn, String cn, String n, int em, int ey, String k) throws RemoteException{
+	public boolean buy(String itemId, int qt, String devise, String clientFirstName, String clientName, String numero, int expirationMonth, int expirationYear, String key) throws RemoteException{
 		Buy b = new Buy();
 		b.setItemId(itemId);
 		b.setQt(qt);
@@ -67,12 +77,12 @@ public class ShopService {
 		
 		Debit d = new Debit();
 		d.setAmount(getPrice(itemId, devise));
-		d.setCfn(cfn);
-		d.setCn(cn);
-		d.setEm(em);
-		d.setEy(ey);
-		d.setK(k);
-		d.setN(n);
+		d.setClientFirstName(clientFirstName);
+		d.setClientName(clientName);
+		d.setExpirationMonth(expirationMonth);
+		d.setExpirationYear(expirationYear);
+		d.setKey(key);
+		d.setNumero(numero);
 		
 		if (!bss.debit(d).get_return()){			// debit fail => cancel buy on supplier
 			CancelBuy cb = new CancelBuy();
