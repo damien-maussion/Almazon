@@ -1,0 +1,15 @@
+@font-face {
+    font-family: almazon;
+    src: url(Artifika-Regular.ttf);
+}
+
+h1{
+	text-align:center;
+	cursor: pointer;
+	font-family: almazon;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
