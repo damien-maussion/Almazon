@@ -9,5 +9,6 @@
     <module>BankService</module>
     <module>SupplierService</module>
     <module>ShopService</module>
+    <module>Client</module>
   </modules>
 </project>

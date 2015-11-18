@@ -1,0 +1,21 @@
+{
+  "name": "Client",
+  "homepage": "https://github.com/damien-maussion/Almazon",
+  "description": "",
+  "main": "client",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Yvan Noblet",
+    "Maussion Damien"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
