@@ -5,7 +5,16 @@ import java.util.ArrayList;
 public class BankService {
 	
 	public double getExchangeRate(String devise,String devise2){
-		return 1.09;
+		if (devise.equals(devise2)){
+			return 1;
+		}
+		else if ("dollar".equals(devise) && "euro".equals(devise2)){
+			return 0.93;
+		}
+		else if ("dollar".equals(devise2) && "euro".equals(devise)) {
+			return 1.07;
+		}
+		return 1;
 	}
 	
 	public boolean debit(String clientFirstName, String clientName, String numero, int expirationMonth, int expirationYear, String key, double amount){

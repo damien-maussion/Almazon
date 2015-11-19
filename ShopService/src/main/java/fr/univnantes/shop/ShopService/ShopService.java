@@ -38,7 +38,7 @@ public class ShopService {
 		double exRate = bss.getExchangeRate(ger).get_return();
 		
 		for (Product p : prod){
-			p.setPrice(p.getPrice()*exRate);
+			p.setPrice(((int)(p.getPrice()*exRate*100)/(double)100));
 		}
 		
 		return prod;
@@ -63,7 +63,7 @@ public class ShopService {
 		
 		double price = sss.getPrice(gp).get_return();
 		
-		return exRate * price;
+		return ( (int)(exRate*price*100) )/(double)100;
 	}
 	
 	
@@ -98,5 +98,20 @@ public class ShopService {
 		GetExchangeRate g = new GetExchangeRate();
 		
 		return bss.getExchangeRate(g).get_return();
+	}
+	
+	public static void main(String args[]) throws RemoteException{
+		ShopService s = new ShopService();
+		
+		Collection<Product> prod = s.getItemList("euro");
+		
+		double d = 4.2123154564;
+		System.out.println((d*100)/100);
+		System.out.println( ((int)(d*100))/(double)100);
+		
+		for (Product p : prod){
+			System.out.println(p.getPrice());
+		}
+		
 	}
 }
