@@ -27,7 +27,7 @@
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
             <h1>Almazon Welcome!</h1>
-            <p>A new shop to buy anything for low coast.</p>
+            <p>A new shop to buy anything for low cost.</p>
             </p>
              <select id="select-devise">
               <option value="dollar">$</option>
@@ -50,6 +50,35 @@
         <!-- /.row -->
 
         <hr>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">It's time to pay</h4>
+                </div>
+                <div class="modal-body">
+                	 <h3>Your command:</h3>
+	                  <p><span id="modal-qt"></span> <span id="modal-product-name"></span> for <span id="modal-price"></span><span id="modal-devise"></span></p>
+	                  <h3>Bank information</h3>
+	                  <label>First name :</label><input id="modal-cfn" type="text"/> <br/>
+	                  <label>Name :</label><input id="modal-cn" type="text"/> <br/>
+	                  <label>Numero :</label><input id="modal-n" type="text"/> <br/>
+	                  <label>Expiration month :</label><input id="modal-em" type='text' id="spinner-em" value="1"/> <br/>
+	                  <label>Expiration year :</label><input id="modal-ey" type='text' id="spinner-ey" value="2015"/> <br/>
+	                  <label>Key :</label><input id="modal-k" type="text"/>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="confirmBuy()">Buy</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
 
         <!-- Footer -->
         <footer>

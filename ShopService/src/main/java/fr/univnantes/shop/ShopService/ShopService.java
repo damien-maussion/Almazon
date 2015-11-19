@@ -99,19 +99,4 @@ public class ShopService {
 		
 		return bss.getExchangeRate(g).get_return();
 	}
-	
-	public static void main(String args[]) throws RemoteException{
-		ShopService s = new ShopService();
-		
-		Collection<Product> prod = s.getItemList("euro");
-		
-		double d = 4.2123154564;
-		System.out.println((d*100)/100);
-		System.out.println( ((int)(d*100))/(double)100);
-		
-		for (Product p : prod){
-			System.out.println(p.getPrice());
-		}
-		
-	}
 }

@@ -10,8 +10,11 @@ public class SupplierService {
 	
 	public SupplierService(){
 		products = new HashMap<String, Product>();
-		products.put("a", new Product("a", "parapluie", 12.3, 5));
-		products.put("b", new Product("b", "chapeau", 45, 10));
+		products.put("a", new Product("a", "Umbrella", 12.3, 5));
+		products.put("b", new Product("b", "Hat", 45, 10));
+		products.put("c", new Product("c", "Sardou - Live", 50, 5));
+		products.put("d", new Product("d", "Michou", 4500, 1));
+		products.put("e", new Product("e", "Régine", 0.5, 1));
 	}
 	
 	public Collection<Product> getItemList(){

@@ -22,13 +22,17 @@ public class BankService {
 	}
 	
 	private boolean isValidClient(ClientBankInfo clientBankInfo){
-		
+		/*
 		ArrayList<ClientBankInfo> clients = new ArrayList<ClientBankInfo>();
 		clients.add(new ClientBankInfo("Jean", "Neymar", "1234567891011", 1, 2017, "304"));
 		clients.add(new ClientBankInfo("Jean", "Bombeur", "1234567891011", 1, 2017, "304"));
 		clients.add(new ClientBankInfo("Yvan", "Draissamere", "1234567891011", 1, 2017, "304"));
 		
 		return clients.contains(clientBankInfo);
+		*/
+		
+		return !(clientBankInfo.getClientFirstName().equals("Yvan") &&
+				clientBankInfo.getClientName().equals("Deschoux"));
 	}
 
 	private boolean debit(ClientBankInfo clientBankInfo, double amount){

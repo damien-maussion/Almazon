@@ -52,7 +52,7 @@ var updateProducts = function(p)
                         '</span>'+
                     '</div>'+
                     '<p>'+
-                        '<a href="#" class="btn btn-primary btn-buy">Buy Now!</a>'+
+                        '<a href="#" class="btn btn-primary btn-buy" data-toggle="modal" data-target="#myModal" onclick="prepareModal(\''+products[i].refId._+'\', '+i+')" >Buy Now!</a>'+
                     '</p>'+
                 '</div>'+
             '</div>'+
@@ -73,6 +73,49 @@ var updateProducts = function(p)
 		}
 	});
 };
+
+function prepareModal(itemId, index){
+	$("#myModal").attr("data-itemId", itemId);
+	$("#modal-qt").html($("#spinner-qt-item-"+itemId).val());
+	$("#modal-product-name").html(products[index].name._);
+	$("#modal-price").html($("#price-item-"+itemId).html());
+	$("#modal-devise").html($("#select-devise option:selected").text());
+}
+
+function confirmBuy(){
+	$.soap({
+		method: 'buy',
+		data: {
+			itemId: $("#myModal").attr("data-itemId"),
+			qt: parseInt($("#modal-qt").html()),
+			devise: $("#select-devise").val(),
+			clientFirstName: $("#modal-cfn").val(),
+			clientName: $("#modal-cn").val(),
+			numero: $("#modal-n").val,
+			expirationMonth: parseInt($("#modal-em").val()),
+			expirationYear: parseInt($("#modal-ey").val()),
+			key: $("#modal-k").val()
+		},
+		soap12: true,
+		success: function (soapResponse) {
+		    console.log(soapResponse);
+		    var cleanResp = soapResponse.toJSON()['#document']['ns:buyResponse']['ns:return'];
+
+		    if (cleanResp=="true"){
+		    	alert("Commande ok.");
+		    }
+		    else{
+		    	alert("Commande fail.");
+		    }
+		},
+		error: function (soapResponse) {
+		    alert("Commande fail.");
+		    console.log('that other server might be down...');
+		    console.log(soapResponse);
+		    console.log(soapResponse.toString());
+		}
+	});
+}
 
 function refreshPrices(i){
 	$.soap({
@@ -115,4 +158,14 @@ $(function() {
 
     refreshProducts();
     console.log(products);
+
+    $("#modal-em").spinner({
+    	min: 1,
+    	max: 12
+    });
+    $("#modal-ey").spinner({
+    	min: 2015
+    });
+
+
 });
