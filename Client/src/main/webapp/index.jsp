@@ -26,7 +26,7 @@
 
         <!-- Jumbotron Header -->
         <header class="jumbotron hero-spacer">
-            <h1>Almazon Welcome!</h1>
+            <h1><a href="https://github.com/damien-maussion/Almazon" target="_blank" style="color:black;cursor:pointer;text-decoration:none;">Almazon Welcome!</a></h1>
             <p>A new shop to buy anything for low cost.</p>
             </p>
              <select id="select-devise">
@@ -84,7 +84,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Almazon 2014</p>
+                    <p>Copyright &copy; Almazon 2015</p>
                 </div>
             </div>
         </footer>
